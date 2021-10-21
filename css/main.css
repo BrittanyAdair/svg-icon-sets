@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: "Overpass", sans-serif;
+  font-family: Overpass, sans-serif;
   line-height: 1.5rem;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -18,7 +18,7 @@ body {
 
 section {
   display: grid;
-  grid-template-columns: "intro" "col1" "col2" "col3";
+  grid-template-areas: "intro" "col1" "col2" "col3";
   gap: 6vmin;
   padding: 6vmin;
   background-color: #ff9500;
@@ -38,6 +38,23 @@ article {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+h3 {
+  margin: 0 0 1.5rem;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0 0 auto;
+}
+
+a {
+  padding: 1rem;
+  border: .2em solid rgba(255, 255, 255, .7);
+  color: #fff;
+  font-size: 1.125rem;
+  text-decoration: none;
 }
 
 a:hover,
@@ -63,10 +80,9 @@ a:focus {
   fill: currentColor;
 }
 
-@media only screen and (min-width 38em) {
-
+@media only screen and (min-width: 38em) {
   section {
-    grid-template-columns:
+    grid-template-areas:
     "intro intro intro"
     "col1 col2 col3";
   }
