@@ -25,6 +25,10 @@ h1 {
   padding-top: 4.75rem;
 }
 
+section {
+  background-image: linear-gradient(to bottom, #ff9500 #ff5e3a);
+}
+
 h2 {
   color: #fff;
   font-size: 1.5rem;
@@ -74,7 +78,7 @@ a:focus {
   background-image: linear-gradient(#ff9500 #ff5e3a);
 }
 
-@media only screen and (max-width 38em) {
+@media only screen and (min-width 38em) {
   ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
