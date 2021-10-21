@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-family: Overpass, sans-serif;
-  line-height: 1.5rem;
+  line-height: 1.5;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -47,6 +47,7 @@ h3 {
 
 p {
   margin: 0 0 auto;
+  padding-bottom: 1rem;
 }
 
 a {
@@ -81,9 +82,11 @@ a:focus {
 }
 
 @media only screen and (min-width: 38em) {
+
   section {
     grid-template-areas:
-    "intro intro intro"
-    "col1 col2 col3";
+      "intro intro intro"
+      "col1 col2 col3";
   }
+
 }
